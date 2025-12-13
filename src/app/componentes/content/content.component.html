@@ -1,0 +1,14 @@
+<section class="container">
+    <ul>
+        <li *ngFor="let item of list">
+            <ng-container *ngIf="item.name == 'user'; else userComponent">
+                <app-user [conversation]="item">
+                </app-user>
+            </ng-container>
+            <ng-template #userComponent>
+                <app-bot [conversation]="item">
+                </app-bot>
+            </ng-template>
+        </li>
+    </ul>
+</section>

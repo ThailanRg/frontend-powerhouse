@@ -1,0 +1,44 @@
+p {
+  width: fit-content;
+  background-color:red;
+  padding: 10px;
+  border-radius: 20px;
+  color: #ffffff;
+  position: relative;
+  margin-left: auto;
+}
+
+/*
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+p::after, p::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  translate: 0;
+  background-image:conic-gradient(from var(--angle), transparent, rgb(13, 164, 252));
+  padding: 2px;
+  animation:5s spin linear infinite;
+  z-index: -1;
+}
+
+.wrapper::before {
+  filter:blur(1.5rem);
+  opacity: 1.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg
+  }  
+  to{
+    --angle:360deg
+  }
+}
+*/

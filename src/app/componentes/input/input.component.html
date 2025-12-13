@@ -1,0 +1,8 @@
+<section class="container">
+    <div class="wrapper">
+        <input [(ngModel)]="newItem" (keyup.enter)="addItem()" placeholder="Digite aqui o que deseja">
+        <button (click)="addItem()">text</button>
+        <button (click)="requestMicrophonePermission()">audio</button>
+        <button (click)="requestCameraPermission()">cam</button>
+    </div>
+</section>

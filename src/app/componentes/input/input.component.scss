@@ -1,0 +1,71 @@
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+input,
+input:focus,
+input:active {
+  width: 89%;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  margin-left: 8px;
+  box-shadow: none;
+  border: 0px transparent;
+  border-radius: 40px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+}
+
+button:last-child {
+  border-radius: 0 40px 40px 0;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 40px;
+  width: 100%;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.wrapper::after, .wrapper::before {
+
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  translate: -2px 0px;
+  background-image:conic-gradient(from var(--angle), transparent, rgb(13, 164, 252));
+  padding: 2px;
+  animation:5s spin linear infinite;
+  z-index: -1;
+}
+
+.wrapper::before {
+  filter:blur(1.5rem);
+  opacity: 1.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg
+  }  
+  to{
+    --angle:360deg
+  }
+}
