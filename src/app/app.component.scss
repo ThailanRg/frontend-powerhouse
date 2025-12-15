@@ -1,0 +1,58 @@
+
+@font-face {
+  font-family: 'montserrat_normal';
+  src: url('../assets/montserrat.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  /*
+  Tipos de format
+  - opentype (otf)
+  - truetype (ttf)
+  - embedded-opentype
+  - truetype-aa (apple advannced tiprography)
+  */
+}
+
+@font-face {
+  font-family: 'myriadprodbold';
+  src: url('../assets/myriadprobold.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  /*
+  Tipos de format
+  - opentype (otf)
+  - truetype (ttf)
+  - embedded-opentype
+  - truetype-aa (apple advannced tiprography)
+  */
+}
+
+@font-face {
+  font-family: 'myriadprodred';
+  src: url('../assets/myriadproregular.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  /*
+  Tipos de format
+  - opentype (otf)
+  - truetype (ttf)
+  - embedded-opentype
+  - truetype-aa (apple advannced tiprography)
+  */
+}
+
+@font-face {
+  font-family: 'montserrat_bold';
+  src: url('../assets/montserratbold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  /*
+  Tipos de format
+  - opentype (otf)
+  - truetype (ttf)
+  - embedded-opentype
+  - truetype-aa (apple advannced tiprography)
+  */
+}
+
+

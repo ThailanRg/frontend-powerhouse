@@ -8,6 +8,7 @@ import { ContentComponent } from './componentes/content/content.component';
 import { UserComponent } from './componentes/content/user/user.component';
 import { BotComponent } from './componentes/content/bot/bot.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './componentes/header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     InputComponent,
     ContentComponent,
     UserComponent,
-    BotComponent
+    BotComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

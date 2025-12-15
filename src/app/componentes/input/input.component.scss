@@ -9,6 +9,7 @@ input:active {
   width: 89%;
   height: 30px;
   outline: none;
+  font-family: "montserrat_normal", Courier, monospace;
   padding-left: 10px;
   margin-left: 8px;
   box-shadow: none;
@@ -36,36 +37,40 @@ button:last-child {
   position: relative;
 }
 
-@property --angle{
+@property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
-.wrapper::after, .wrapper::before {
-
+.wrapper::after,
+.wrapper::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 40px;
   translate: -2px 0px;
-  background-image:conic-gradient(from var(--angle), transparent, rgb(13, 164, 252));
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent,
+    rgb(233, 233, 233)
+  );
   padding: 2px;
-  animation:5s spin linear infinite;
+  animation: 5s spin linear infinite;
   z-index: -1;
 }
 
 .wrapper::before {
-  filter:blur(1.5rem);
+  filter: blur(1.5rem);
   opacity: 1.5;
 }
 
 @keyframes spin {
   from {
-    --angle: 0deg
-  }  
-  to{
-    --angle:360deg
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
   }
 }
