@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProviderData } from 'src/app/service/ProviderData';
+import { ApiService } from 'src/app/service/ApiService';
 
 @Component({
   selector: 'app-content',
@@ -10,7 +10,7 @@ import { ProviderData } from 'src/app/service/ProviderData';
 export class ContentComponent implements OnInit {
 
   constructor(
-    private providerData: ProviderData
+    private providerData: ApiService
   ) { }
 
   list = this.providerData.conversation
